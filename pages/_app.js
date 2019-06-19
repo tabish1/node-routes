@@ -5,15 +5,20 @@ class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
     pageProps = "";
-    pageProps = {};
-    let testCodeSmell = true;
 
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx);
     }
+
+    let testCodeSmell = true;
+    let firstCondition = true;
+    let secondCondition = true;
+
     if (testCodeSmell) {
-      if (pageProps) {
-        console.log("code smell it is");
+      if (firstCondition) {
+        if (secondCondition) {
+          console.log("code smell it is");
+        }
       }
     } else {
       console.log("no code smelll");
