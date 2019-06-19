@@ -19,14 +19,6 @@ class MyApp extends App {
       console.log("no code smelll");
     }
 
-    if (testCodeSmell) {
-      if (pageProps) {
-        console.log("code smell it is");
-      }
-    } else {
-      console.log("no code smelll");
-    }
-
     return { pageProps };
   }
 
