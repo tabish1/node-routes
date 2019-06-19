@@ -15,11 +15,6 @@ class MyApp extends App {
     let secondCondition = true;
 
     if (testCodeSmell) {
-      if (firstCondition) {
-        if (secondCondition) {
-          console.log("code smell it is");
-        }
-      }
     } else {
       console.log("no code smelll");
     }
