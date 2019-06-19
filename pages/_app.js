@@ -1,12 +1,22 @@
-import React from 'react';
-import App, { Container } from 'next/app';
+import React from "react";
+import App, { Container } from "next/app";
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
+    pageProps = "";
 
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx);
+    }
+
+    let testCodeSmell = true;
+    let firstCondition = true;
+    let secondCondition = true;
+
+    if (testCodeSmell) {
+    } else {
+      console.log("no code smelll");
     }
 
     return { pageProps };
