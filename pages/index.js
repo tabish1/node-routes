@@ -3,7 +3,7 @@ import { Link } from "../server/next-routes";
 
 const Home = () => (
   <Link href="/login">
-    <a>login</a>
+    <a>Login</a>
     <p>this is a test paragraph</p>
   </Link>
 );
